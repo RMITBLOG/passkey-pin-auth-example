@@ -1,0 +1,24 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f4f7f8; color: #152d35; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100dvh; }
+main { width: min(100% - 32px, 460px); margin: 0 auto; padding: 48px 0; }
+.card { background: white; border: 1px solid #dce6e9; border-radius: 24px; padding: 28px; box-shadow: 0 16px 44px #16313a12; }
+.eyebrow { margin: 0 0 12px; color: #176a68; font-size: .83rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+h1 { font-size: clamp(2rem, 7vw, 2.7rem); line-height: 1.08; margin: 0 0 16px; }
+h2 { font-size: 1.15rem; margin: 0 0 12px; }
+p { line-height: 1.55; }
+.muted, .hint { color: #526971; }
+.hint { font-size: .9rem; margin: 0; }
+.stack { display: grid; gap: 14px; }
+.card > .stack { margin-top: 28px; }
+button, input, a.button { font: inherit; min-height: 52px; border-radius: 14px; }
+button { cursor: pointer; font-weight: 700; padding: 12px 18px; }
+button:disabled { opacity: .6; cursor: wait; }
+.primary { width: 100%; border: 0; background: #075d59; color: white; }
+.primary:hover:not(:disabled) { background: #074946; }
+.secondary, a.button { display: grid; place-items: center; width: 100%; border: 1px solid #b7ced0; background: white; color: #075d59; text-decoration: none; }
+input { width: 100%; border: 1px solid #aebfc2; padding: 8px 16px; font-size: 1.35rem; letter-spacing: .17em; text-align: center; }
+label { font-weight: 700; }
+.error { margin: 0; color: #9f2929; background: #fff0ef; border-radius: 10px; padding: 12px; }
+.note { border-left: 3px solid #0a7770; padding-left: 14px; color: #526971; }
+a { color: #075d59; }
